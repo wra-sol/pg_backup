@@ -1,0 +1,28 @@
+{
+  "name": "pg-backup-tool",
+  "version": "1.0.0",
+  "description": "PostgreSQL backup tool with S3-compatible storage support",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "backup": "node src/cli.js",
+    "test": "node --test"
+  },
+  "keywords": ["postgresql", "backup", "s3", "database"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.470.0",
+    "pg": "^8.11.3",
+    "commander": "^11.1.0",
+    "dotenv": "^16.3.1",
+    "tar": "^6.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
