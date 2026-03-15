@@ -1,0 +1,5 @@
+[phases.setup]
+aptPkgs = ["...", "postgresql-client"]
+
+[start]
+cmd = "node src/cli.js backup"
